@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smart Lender - Loan Prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="text-center mb-4">
+        <h1>Smart Lender</h1>
+        <p class="lead">Predict loan eligibility using machine learning.</p>
+      </div>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <form action="/predict" method="post">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Gender</label>
+                <select class="form-select" name="gender">
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Married</label>
+                <select class="form-select" name="married">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Education</label>
+                <select class="form-select" name="education">
+                  <option>Graduate</option>
+                  <option>Not Graduate</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Self Employed</label>
+                <select class="form-select" name="self_employed">
+                  <option>No</option>
+                  <option>Yes</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Applicant Income</label>
+                <input type="number" step="1" class="form-control" name="applicant_income" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Coapplicant Income</label>
+                <input type="number" step="1" class="form-control" name="coapplicant_income" value="0">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Loan Amount</label>
+                <input type="number" step="0.1" class="form-control" name="loan_amount" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Loan Term (days)</label>
+                <input type="number" step="1" class="form-control" name="loan_amount_term" value="360" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Credit History</label>
+                <select class="form-select" name="credit_history">
+                  <option value="1">Good</option>
+                  <option value="0">No History</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Property Area</label>
+                <select class="form-select" name="property_area">
+                  <option>Urban</option>
+                  <option>Semiurban</option>
+                  <option>Rural</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-4 text-center">
+              <button type="submit" class="btn btn-primary btn-lg">Predict Eligibility</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
