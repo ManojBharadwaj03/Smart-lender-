@@ -1,0 +1,117 @@
+[1mdiff --cc README.md[m
+[1mindex dcebc22,2b959c4..0000000[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@@ -1,1 -1,50 +1,61 @@@[m
+[31m- # Smart-lender-[m
+[31m -# Smart Lender - Loan Eligibility Prediction System[m
+[31m -[m
+[31m -Smart Lender is a machine learning-powered loan eligibility prediction app built with Python and Flask. It evaluates applicant information using multiple classifiers and deploys the best model for real-time prediction.[m
+[31m -[m
+[31m -## Features[m
+[31m -- Preprocess loan applicant data[m
+[31m -- Train Decision Tree, Random Forest, KNN, and XGBoost models[m
+[31m -- Select and save the best-performing model[m
+[31m -- Provide a Flask web interface for real-time loan eligibility prediction[m
+[31m -[m
+[31m -## Setup[m
+[31m -1. Create a virtual environment:[m
+[31m -   ```bash[m
+[31m -   python -m venv venv[m
+[31m -   source venv/Scripts/activate   # Windows[m
+[31m -   # or source venv/bin/activate   # Linux/macOS[m
+[31m -   ```[m
+[31m -2. Install dependencies:[m
+[31m -   ```bash[m
+[31m -   pip install -r requirements.txt[m
+[31m -   ```[m
+[31m -3. Train the model:[m
+[31m -   ```bash[m
+[31m -   python train_model.py[m
+[31m -   ```[m
+[31m -4. Run the Flask app:[m
+[31m -   ```bash[m
+[31m -   python app.py[m
+[31m -   ```[m
+[31m -5. Open `http://127.0.0.1:5000` in your browser.[m
+[31m -[m
+[31m -## Data[m
+[31m -Place a loan dataset at `data/loan_data.csv` with the following columns:[m
+[31m -- Gender[m
+[31m -- Married[m
+[31m -- Education[m
+[31m -- Self_Employed[m
+[31m -- ApplicantIncome[m
+[31m -- CoapplicantIncome[m
+[31m -- LoanAmount[m
+[31m -- Loan_Amount_Term[m
+[31m -- Credit_History[m
+[31m -- Property_Area[m
+[31m -- Loan_Status[m
+[31m -[m
+[31m -If no dataset is present, the app will use a built-in sample dataset for training.[m
+[31m -[m
+[31m -## Notes[m
+[31m -- The project saves the trained model to `models/best_loan_model.pkl`.[m
+[31m -- You can replace the sample data with your own loan eligibility dataset and re-run training.[m
+[32m++[m
+[32m++   # Smart Lender - Loan Eligibility Prediction System[m
+[32m++[m
+[32m++   Smart Lender is a machine learning-powered loan eligibility prediction app built with Python and Flask. It evaluates applicant information using multiple classifiers and deploys the best model for real-time prediction.[m
+[32m++[m
+[32m++   ## Features[m
+[32m++   - Preprocess loan applicant data[m
+[32m++   - Train Decision Tree, Random Forest, KNN, and XGBoost models[m
+[32m++   - Select and save the best-performing model[m
+[32m++   - Provide a Flask web interface for real-time loan eligibility prediction[m
+[32m++[m
+[32m++   ## Setup[m
+[32m++   1. Create a virtual environment:[m
+[32m++      ```bash[m
+[32m++      python -m venv venv[m
+[32m++      # Windows[m
+[32m++      venv\Scripts\activate[m
+[32m++      # Linux/macOS[m
+[32m++      # source venv/bin/activate[m
+[32m++      ```[m
+[32m++   2. Install dependencies:[m
+[32m++      ```bash[m
+[32m++      pip install -r requirements.txt[m
+[32m++      ```[m
+[32m++[m
+[32m++   3. Train the model:[m
+[32m++      ```bash[m
+[32m++      python train_model.py[m
+[32m++      ```[m
+[32m++   4. Run the Flask app:[m
+[32m++      ```bash[m
+[32m++      python app.py[m
+[32m++      ```[m
+[32m++   5. Open `http://127.0.0.1:5000` in your browser.[m
+[32m++[m
+[32m++   ## Data[m
+[32m++   Place a loan dataset at `data/loan_data.csv` with the following columns:[m
+[32m++   - Gender[m
+[32m++   - Married[m
+[32m++   - Education[m
+[32m++   - Self_Employed[m
+[32m++   - ApplicantIncome[m
+[32m++   - CoapplicantIncome[m
+[32m++   - LoanAmount[m
+[32m++   - Loan_Amount_Term[m
+[32m++   - Credit_History[m
+[32m++   - Property_Area[m
+[32m++   - Loan_Status[m
+[32m++[m
+[32m++   If no dataset is present, the app will use a built-in sample dataset for training.[m
+[32m++[m
+[32m++   ## Notes[m
+[32m++   - The project saves the trained model to `models/best_loan_model.pkl`.[m
+[32m++   - You can replace the sample data with your own loan eligibility dataset and re-run training.[m
+[32m++[m
+[32m++   ## License[m
+[32m++   Add a license if you plan to share the repository publicly.[m
+[32m++[m
+[32m++   ---[m
+[32m++[m
+[32m++   For more details see the project files and `README_GITHUB_SETUP.md` for GitHub push instructions.[m

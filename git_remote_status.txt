@@ -1,0 +1,20 @@
+﻿f1400fca01f1334236792a1d55c02f2b92e474b9	refs/heads/main
+f1400fca01f1334236792a1d55c02f2b92e474b9
+HEAD
+A  .gitignore
+M  README.md
+A  README_GITHUB_SETUP.md
+A  Smart_Lender_Project.docx
+A  Smart_Lender_Project.pdf
+A  app.py
+AD data/loan_data.csv
+A  generate_docx.py
+A  generate_pdf.py
+A  push_to_github.bat
+A  requirements.txt
+A  templates/index.html
+A  templates/result.html
+A  train_model.py
+?? git_remote_status.txt
+?? tatus
+f1400fc Initial commit
